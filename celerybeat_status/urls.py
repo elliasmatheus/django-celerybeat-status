@@ -1,8 +1,7 @@
 from celerybeat_status.views import PeriodicTasksStatusListView
-import django
 
 
-if django.get_version() < (4, 0, 0):
+if django_version.get_complete_version() < (4, 0, 0):
     from django.conf.urls import url
 
     urlpatterns = [
