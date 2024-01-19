@@ -1,5 +1,5 @@
 from django.contrib import admin
-
+from django.utils import version as django_version
 
 if django_version.get_complete_version() < (4, 0, 0):
     from django.conf.urls import url, include
