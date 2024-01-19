@@ -1,4 +1,5 @@
 from celerybeat_status.views import PeriodicTasksStatusListView
+from django.utils import version as django_version
 
 
 if django_version.get_complete_version() < (4, 0, 0):
